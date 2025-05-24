@@ -15260,7 +15260,7 @@ function getQueryVariable(_0x433a0b) {
       'x': -0x7,
       'y': 0x2e
     },
-    'boostType': 0x0,
+    'boostType': 0x1,
     'init': function (_0xa73919, _0x434435, _0x3ab889) {
       this.parent(_0xa73919, _0x434435, _0x3ab889), this.BOOST_TYPES = this.boostController.BOOST_TYPES, this.capacity = new ig.Animation(this.idleSheet, 0x1, [0x0], !0x0), this.revenue = new ig.Animation(this.idleSheet, 0x1, [0x1], !0x0), this.checkInTime = new ig.Animation(this.idleSheet, 0x1, [0x2], !0x0), this.service = new ig.Animation(this.idleSheet, 0x1, [0x3], !0x0), this.speed = new ig.Animation(this.idleSheet, 0x1, [0x4], !0x0), this.currentAnim = this.capacity, ig.game.sortEntitiesDeferred();
     },
@@ -15283,13 +15283,13 @@ function getQueryVariable(_0x433a0b) {
       }
     },
     'onClickCallback': function () {
-      ig.game.spawnEntity(EntityPopupBoost, 0.5 * ig.system.width + ig.game.screen.x, 0.5 * ig.system.height + ig.game.screen.y, {
-        'zIndex': this.zIndex + 0x14,
-        'boostType': this.boostType
-      }).tweenIn(), this.controller.toggleButtonsClickable(!0x1);
+      // ig.game.spawnEntity(EntityPopupBoost, 0.5 * ig.system.width + ig.game.screen.x, 0.5 * ig.system.height + ig.game.screen.y, {
+      //   'zIndex': this.zIndex + 0x14,
+      //   'boostType': this.boostType
+      // }).tweenIn(), this.controller.toggleButtonsClickable(!0x1);
     },
     'show': function () {
-      this.parent(), this.boostType = Math.floor(0x5 * Math.random()), this.setType(this.boostType), this.grow(!0x0, 0x12c);
+      // this.parent(), this.boostType = Math.floor(0x5 * Math.random()), this.setType(this.boostType), this.grow(!0x0, 0x12c);
     }
   });
 }), ig.baked = !0x0, ig.module('game.entities.buttons.button-prestige').requires('game.entities.buttons.button-image').defines(function () {
